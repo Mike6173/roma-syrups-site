@@ -1,0 +1,72 @@
+<!-- Page Hero -->
+<section class="page-hero"
+  style="background-image: url({{ 'services-hero.jpg' | asset_url }});">
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <h1>{{ collection.title }}</h1>
+    {%- if collection.description != blank -%}
+      <p>{{ collection.description }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+<!-- Products Grid -->
+<section class="section-products-shopify">
+  <div class="container">
+    {%- paginate collection.products by 12 -%}
+      {%- if collection.products.size > 0 -%}
+        <div class="shopify-products-grid">
+          {%- for product in collection.products -%}
+            <a href="{{ product.url }}" class="shopify-product-card">
+              <div class="img-wrap">
+                {%- if product.featured_image -%}
+                  <img src="{{ product.featured_image | image_url: width: 600 }}"
+                       alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                       width="600" loading="lazy">
+                {%- else -%}
+                  <div style="display:flex;align-items:center;justify-content:center;height:100%;
+                              color:var(--muted-fg);font-family:'Oswald',sans-serif;font-size:0.875rem;
+                              text-transform:uppercase;">No Image</div>
+                {%- endif -%}
+              </div>
+              <div class="card-body">
+                <h3>{{ product.title }}</h3>
+                <p class="price">
+                  {%- if product.price_varies -%}
+                    From {{ product.price_min | money }}
+                  {%- else -%}
+                    {{ product.price | money }}
+                  {%- endif -%}
+                </p>
+                <span class="btn-view">View Details &rarr;</span>
+              </div>
+            </a>
+          {%- endfor -%}
+        </div>
+
+        {%- if paginate.pages > 1 -%}
+          <div style="text-align:center;margin-top:3rem;">
+            {{ paginate | default_pagination }}
+          </div>
+        {%- endif -%}
+
+      {%- else -%}
+        <div style="text-align:center;padding:4rem 0;">
+          <p style="font-family:'Oswald',sans-serif;font-size:1.25rem;color:var(--muted-fg);">
+            No products found in this collection.
+          </p>
+          <a href="/pages/contact" class="btn btn-gold" style="margin-top:1.5rem;display:inline-flex;">
+            Contact Us for a Quote
+          </a>
+        </div>
+      {%- endif -%}
+    {%- endpaginate -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Collection",
+  "settings": []
+}
+{% endschema %}

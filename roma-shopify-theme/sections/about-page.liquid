@@ -1,0 +1,111 @@
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <h1>About Us</h1>
+    <p>Family owned and operated since 1979</p>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="background-color:var(--secondary-bg);padding:4rem 0;">
+  <div class="container">
+    <div style="display:grid;gap:2rem;text-align:center;"
+         class="about-stats-grid">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="margin:0 auto;color:var(--gold);">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:1.25rem;font-weight:700;
+                   text-transform:uppercase;color:var(--foreground);margin-top:1rem;">Family Owned</h3>
+        <p style="font-family:'Source Sans 3',sans-serif;font-size:0.9375rem;color:var(--muted-fg);margin-top:0.5rem;">
+          Three generations of beverage system expertise since 1979
+        </p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="margin:0 auto;color:var(--gold);">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:1.25rem;font-weight:700;
+                   text-transform:uppercase;color:var(--foreground);margin-top:1rem;">Two Locations</h3>
+        <p style="font-family:'Source Sans 3',sans-serif;font-size:0.9375rem;color:var(--muted-fg);margin-top:0.5rem;">
+          Brooklyn, NY and Marlboro, NJ serving the entire tri-state area
+        </p>
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             style="margin:0 auto;color:var(--gold);">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:1.25rem;font-weight:700;
+                   text-transform:uppercase;color:var(--foreground);margin-top:1rem;">45+ Years</h3>
+        <p style="font-family:'Source Sans 3',sans-serif;font-size:0.9375rem;color:var(--muted-fg);margin-top:0.5rem;">
+          Over four decades of trusted service to the hospitality industry
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Long-form content -->
+<section style="background-color:var(--background);padding:5rem 0;">
+  <div class="container">
+    <div style="max-width:56rem;margin:0 auto;">
+      <h2 class="section-heading">Our Story</h2>
+      <div style="font-family:'Source Sans 3',sans-serif;font-size:1.0625rem;line-height:1.8;
+                  color:var(--muted-fg);margin-top:1.5rem;">
+        <p>Roma Syrups and Beverage Systems has been providing top-shelf service and products to bars,
+           lounges, diners, restaurants, pizzerias, catering halls and other establishments for over
+           45 years.</p>
+        <p style="margin-top:1.25rem;">
+           Roma Syrups is centrally located in Brooklyn, NY. Now servicing New Jersey from our new
+           Marlboro, NJ location. Family owned and operated since 1979.
+        </p>
+        <p style="margin-top:1.25rem;">
+           Serving Staten Island, Manhattan, Brooklyn, Queens, Bronx, Connecticut and New Jersey,
+           we are the tri-state area's most trusted commercial beverage system contractor.
+        </p>
+        <p style="margin-top:1.25rem;">
+           We specialize in the installation, maintenance, and repair of soda systems, draft beer systems,
+           wine on tap systems, glycol systems, water filtration, coffee systems, refrigeration equipment,
+           and compressed gas supplies.
+        </p>
+        <p style="margin-top:1.25rem;">
+           We are proud sellers of kosher products and committed to providing every client with
+           24-hour emergency service response.
+        </p>
+      </div>
+      <div style="margin-top:2rem;">
+        <a href="/pages/contact" class="btn btn-gold">Get a Free Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (min-width: 768px) {
+    .about-stats-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "About Page",
+  "settings": [],
+  "presets": [
+    {
+      "name": "About Page",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

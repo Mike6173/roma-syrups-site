@@ -1,0 +1,152 @@
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <h1>Frequently Asked Questions</h1>
+    <p>Answers to common questions about our services and products.</p>
+  </div>
+</section>
+
+<!-- FAQ Content -->
+<section style="background-color:var(--background);padding:5rem 0;">
+  <div class="container">
+    <div style="max-width:50rem;margin:0 auto;" class="faq-list">
+
+      <details class="faq-item">
+        <summary>What areas do you service?</summary>
+        <p>We service all five boroughs of New York City (Brooklyn, Manhattan, Queens, Bronx, Staten Island),
+           as well as New Jersey and Connecticut. Our main offices are located in Brooklyn, NY and Marlboro, NJ.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How quickly can you respond to service calls?</summary>
+        <p>We are committed to responding to all service requests within 24 hours. For emergencies,
+           we offer same-day service when possible. Call us at 718-259-1842 for urgent situations.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How often should beer lines be cleaned?</summary>
+        <p>Industry standards recommend cleaning beer lines every two weeks for optimal beer quality and
+           hygiene. We offer regular line cleaning service contracts to ensure your systems are always
+           compliant and serving the best product possible.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you sell both new and used equipment?</summary>
+        <p>Yes! We sell both new and used soda fountains, bar guns, beer taps, draft systems,
+           and other beverage equipment. Used equipment can be a great cost-effective option for
+           businesses on a budget.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can you design a custom draft beer system?</summary>
+        <p>Absolutely. Whether it's a single kegerator or a multi-tier draft beer system, our experts
+           can design and install a system from the ground up tailored to your specific space and needs.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you offer maintenance contracts?</summary>
+        <p>Yes, we offer preventive maintenance contracts that include regular inspections, cleaning,
+           and tune-ups. These contracts help extend equipment life and prevent costly breakdowns,
+           saving you money in the long run.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What types of compressed gas do you supply?</summary>
+        <p>We supply CO2, G-Mix, Beer Gas, Nitrogen, and Helium for all commercial applications.
+           Contact us for pricing and delivery information.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are your products kosher?</summary>
+        <p>Yes! Roma Syrups is proud to sell kosher-certified products. Please contact us for
+           more details on our kosher product offerings.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do you service home soda dispensers?</summary>
+        <p>Yes, we service home soda dispensers and soda fountains in addition to our commercial
+           services. Contact us to schedule a service appointment.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I request a free consultation?</summary>
+        <p>You can request a free consultation by calling us at
+           <a href="tel:718-259-1842" style="color:var(--gold);font-weight:600;">718-259-1842</a>,
+           emailing us at
+           <a href="mailto:info@romasyrups.com" style="color:var(--gold);font-weight:600;">info@romasyrups.com</a>,
+           or filling out the
+           <a href="/pages/contact" style="color:var(--gold);font-weight:600;">contact form</a> on our website.
+           We respond within 24 hours.
+        </p>
+      </details>
+
+    </div><!-- /.faq-list -->
+  </div><!-- /.container -->
+</section>
+
+<style>
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    background-color: var(--card);
+  }
+
+  .faq-item summary {
+    padding: 1.25rem 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--foreground);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+  }
+
+  .faq-item summary::-webkit-details-marker { display: none; }
+
+  .faq-item summary::after {
+    content: '+';
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+
+  .faq-item[open] summary::after { content: '−'; }
+
+  .faq-item summary:hover { background-color: var(--secondary-bg); }
+
+  .faq-item[open] summary {
+    background-color: var(--secondary-bg);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .faq-item p {
+    padding: 1rem 1.5rem 1.25rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--muted-fg);
+  }
+</style>
+
+{% schema %}
+{
+  "name": "FAQ Page",
+  "settings": [],
+  "presets": [
+    {
+      "name": "FAQ Page",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

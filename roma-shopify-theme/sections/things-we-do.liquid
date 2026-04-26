@@ -1,0 +1,136 @@
+<section class="section-things-we-do">
+  <div class="container">
+    <h2 class="section-heading text-center">Things We Do</h2>
+    <div class="things-grid">
+
+      <!-- Wine Systems -->
+      <div class="thing-card">
+        <div class="thing-card-img-wrap">
+          <div class="thing-card-img-circle">
+            {%- if section.settings.wine_image != blank -%}
+              <img src="{{ section.settings.wine_image | image_url: width: 300 }}" alt="Wine Systems" loading="lazy">
+            {%- else -%}
+              <img src="{{ 'wine-systems.jpg' | asset_url }}" alt="Wine Systems" loading="lazy">
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="thing-card-body">
+          <h3>Wine Systems</h3>
+          <p>We install Wine on Tap Systems, providing a fresh and crisp pour in every glass without the high cost, storage space and waste.</p>
+          <a href="/pages/contact" class="link-gold">Contact Us &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Refrigeration -->
+      <div class="thing-card">
+        <div class="thing-card-img-wrap">
+          <div class="thing-card-img-circle">
+            {%- if section.settings.refrigeration_image != blank -%}
+              <img src="{{ section.settings.refrigeration_image | image_url: width: 300 }}" alt="Refrigeration" loading="lazy">
+            {%- else -%}
+              <img src="{{ 'refrigeration.jpg' | asset_url }}" alt="Refrigeration" loading="lazy">
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="thing-card-body">
+          <h3>Refrigeration</h3>
+          <p>We service, sell and install Ice Makers, Walk-In Boxes/Coolers and Refrigeration.</p>
+          <a href="/pages/contact" class="link-gold">Contact Us &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Soda Systems -->
+      <div class="thing-card">
+        <div class="thing-card-img-wrap">
+          <div class="thing-card-img-circle">
+            {%- if section.settings.soda_image != blank -%}
+              <img src="{{ section.settings.soda_image | image_url: width: 300 }}" alt="Soda Systems" loading="lazy">
+            {%- else -%}
+              <img src="{{ 'soda-systems.jpg' | asset_url }}" alt="Soda Systems" loading="lazy">
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="thing-card-body">
+          <h3>Soda Systems</h3>
+          <p>Our prompt service department will ensure your issue is resolved the first time and your soda dispensing system, bar gun and soda machines run optimally.</p>
+          <a href="/pages/contact" class="link-gold">Contact Us &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Beer Systems -->
+      <div class="thing-card">
+        <div class="thing-card-img-wrap">
+          <div class="thing-card-img-circle">
+            {%- if section.settings.beer_image != blank -%}
+              <img src="{{ section.settings.beer_image | image_url: width: 300 }}" alt="Beer Systems" loading="lazy">
+            {%- else -%}
+              <img src="{{ 'beer-systems.jpg' | asset_url }}" alt="Beer Systems" loading="lazy">
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="thing-card-body">
+          <h3>Beer Systems</h3>
+          <p>Whether it's a single kegerator or multi-tier beer system, we can do it from the ground up. Have our experts design your draft beer system.</p>
+          <a href="/pages/contact" class="link-gold">Contact Us &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Water Systems -->
+      <div class="thing-card">
+        <div class="thing-card-img-wrap">
+          <div class="thing-card-img-circle">
+            {%- if section.settings.water_image != blank -%}
+              <img src="{{ section.settings.water_image | image_url: width: 300 }}" alt="Water Systems" loading="lazy">
+            {%- else -%}
+              <img src="{{ 'water-systems.jpg' | asset_url }}" alt="Water Systems" loading="lazy">
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="thing-card-body">
+          <h3>Water Systems</h3>
+          <p>Each year over 22 billion water bottles are thrown away&hellip; By choosing the Crysalli system you help reduce environmental impact.</p>
+          <a href="/pages/contact" class="link-gold">Contact Us &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Coffee on Tap -->
+      <div class="thing-card">
+        <div class="thing-card-img-wrap">
+          <div class="thing-card-img-circle">
+            {%- if section.settings.coffee_image != blank -%}
+              <img src="{{ section.settings.coffee_image | image_url: width: 300 }}" alt="Coffee on Tap" loading="lazy">
+            {%- else -%}
+              <img src="{{ 'coffee-tap.jpg' | asset_url }}" alt="Coffee on Tap" loading="lazy">
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="thing-card-body">
+          <h3>Coffee on Tap</h3>
+          <p>Nitro Cold Brew Coffee is one of the hottest trends today! Have us design a coffee dispensing system for you and give your business a JOLT&hellip;</p>
+          <a href="/pages/contact" class="link-gold">Contact Us &rarr;</a>
+        </div>
+      </div>
+
+    </div><!-- /.things-grid -->
+  </div><!-- /.container -->
+</section>
+
+{% schema %}
+{
+  "name": "Things We Do",
+  "settings": [
+    { "type": "image_picker", "id": "wine_image",          "label": "Wine Systems image" },
+    { "type": "image_picker", "id": "refrigeration_image", "label": "Refrigeration image" },
+    { "type": "image_picker", "id": "soda_image",          "label": "Soda Systems image" },
+    { "type": "image_picker", "id": "beer_image",          "label": "Beer Systems image" },
+    { "type": "image_picker", "id": "water_image",         "label": "Water Systems image" },
+    { "type": "image_picker", "id": "coffee_image",        "label": "Coffee on Tap image" }
+  ],
+  "presets": [
+    {
+      "name": "Things We Do",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

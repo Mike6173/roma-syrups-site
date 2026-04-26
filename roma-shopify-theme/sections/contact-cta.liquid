@@ -1,0 +1,46 @@
+<section class="section-contact-cta">
+  <div class="container">
+    <div class="inner">
+      <h2>Get in Touch</h2>
+      <p class="meta">
+        &#9990; 718-259-1842 &middot; info@romasyrups.com &middot; We respond within 24 hours.
+      </p>
+
+      {% form 'contact', id: 'contact-cta-form' %}
+        {%- if form.posted_successfully? -%}
+          <p style="color:var(--gold);text-align:center;margin-top:1rem;font-family:'Oswald',sans-serif;font-size:1.05rem;">
+            &#10003; Thank you! We'll respond within 24 hours.
+          </p>
+        {%- endif -%}
+
+        <div class="contact-form dark" style="margin-top:2rem;">
+          <div class="form-row">
+            <input type="text" name="contact[name]" placeholder="Your Name" required>
+            <input type="text" name="contact[business]" placeholder="Business Name">
+          </div>
+          <div class="form-row">
+            <input type="tel"   name="contact[phone]" placeholder="Phone Number" required>
+            <input type="email" name="contact[email]" placeholder="Email Address" required>
+          </div>
+          <textarea name="contact[body]" rows="3" placeholder="How can we help you?"></textarea>
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
+            Send Message
+          </button>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact CTA",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Contact CTA",
+      "category": "Contact"
+    }
+  ]
+}
+{% endschema %}

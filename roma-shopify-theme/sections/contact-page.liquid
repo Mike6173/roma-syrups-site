@@ -1,0 +1,111 @@
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <h1>Contact Us</h1>
+    <p>Get in touch for a free consultation or service request.</p>
+  </div>
+</section>
+
+<!-- Contact Content -->
+<section class="section-contact-page">
+  <div class="container">
+    <div class="contact-page-layout">
+
+      <!-- Form -->
+      <div>
+        <h2 style="font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;
+                   text-transform:uppercase;letter-spacing:0.05em;color:var(--foreground);">
+          Send Us a Message
+        </h2>
+        <p style="font-family:'Source Sans 3',sans-serif;color:var(--muted-fg);margin-top:0.5rem;">
+          We respond within 24 hours.
+        </p>
+
+        {% form 'contact', id: 'contact-page-form' %}
+          {%- if form.posted_successfully? -%}
+            <p style="color:var(--olive);background:var(--secondary-bg);padding:1rem;border-radius:var(--radius);
+                      margin-top:1rem;font-family:'Oswald',sans-serif;">
+              &#10003; Thank you! We'll respond within 24 hours.
+            </p>
+          {%- endif -%}
+
+          <div class="contact-form" style="margin-top:1.5rem;">
+            <div class="form-row">
+              <input type="text"  name="contact[name]"     placeholder="Your Name *"      required>
+              <input type="text"  name="contact[business]" placeholder="Business Name">
+            </div>
+            <div class="form-row">
+              <input type="tel"   name="contact[phone]"    placeholder="Phone Number *"   required>
+              <input type="email" name="contact[email]"    placeholder="Email Address *"  required>
+            </div>
+            <textarea name="contact[body]" rows="5" placeholder="How can we help you?"></textarea>
+            <button type="submit" class="btn btn-gold" style="align-self:flex-start;">
+              Send Message
+            </button>
+          </div>
+        {% endform %}
+      </div>
+
+      <!-- Sidebar info -->
+      <div>
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Roma Syrups<br>Brooklyn, NY 11204</span>
+          </div>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12
+                       19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72
+                       12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91
+                       a16 16 0 0 0 6.29 6.29l.75-.75a2 2 0 0 1 2.11-.45
+                       12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:718-259-1842">718-259-1842</a>
+          </div>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:info@romasyrups.com">info@romasyrups.com</a>
+          </div>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>24-Hour Service Response</span>
+          </div>
+        </div>
+
+        <div class="service-areas-card">
+          <h3>Service Areas</h3>
+          <p>Brooklyn &middot; Manhattan &middot; Queens &middot; Bronx &middot; Staten Island &middot; New Jersey &middot; Connecticut</p>
+        </div>
+      </div>
+
+    </div><!-- /.contact-page-layout -->
+  </div><!-- /.container -->
+</section>
+
+{% schema %}
+{
+  "name": "Contact Page",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Contact Page",
+      "category": "Contact"
+    }
+  ]
+}
+{% endschema %}

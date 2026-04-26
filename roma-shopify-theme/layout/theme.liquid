@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>
+    {%- if page_title == blank -%}
+      Roma Syrups &amp; Beverage Systems
+    {%- else -%}
+      {{ page_title }} | Roma Syrups &amp; Beverage Systems
+    {%- endif -%}
+  </title>
+
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- else -%}
+    <meta name="description" content="Roma Syrups &amp; Beverage Systems — NYC &amp; NJ's trusted commercial beverage contractor since 1979. Soda systems, draft beer, wine on tap, refrigeration and more.">
+  {%- endif -%}
+
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32 }}">
+  {%- endif -%}
+
+  {{ content_for_header }}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  {{ 'styles.css' | asset_url | stylesheet_tag }}
+</head>
+
+<body>
+  {%- section 'header' -%}
+
+  <main id="main-content" role="main">
+    {{ content_for_layout }}
+  </main>
+
+  {%- section 'footer' -%}
+
+  <!-- Floating call button (mobile) -->
+  <a href="tel:718-259-1842" class="floating-call-btn" aria-label="Call us">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12
+               19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72
+               12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91
+               a16 16 0 0 0 6.29 6.29l.75-.75a2 2 0 0 1 2.11-.45
+               12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    Call Us
+  </a>
+
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+</body>
+</html>

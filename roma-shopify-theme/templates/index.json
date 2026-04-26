@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "heading": "Welcome to Roma Syrups and Beverage Systems",
+        "subheading": "We specialize in Soda Systems, Draft Beer Systems, Glycol Systems, Water Systems, Compressed Gas, Coffee on Tap, Wine on Tap, Ice Makers, Refrigeration, Walk-In Boxes and more.",
+        "cta_primary_label": "Get a Free Consultation",
+        "cta_primary_url": "/pages/contact"
+      }
+    },
+    "about": {
+      "type": "about",
+      "settings": {}
+    },
+    "products_overview": {
+      "type": "products-overview",
+      "settings": {}
+    },
+    "things_we_do": {
+      "type": "things-we-do",
+      "settings": {}
+    },
+    "kosher_banner": {
+      "type": "kosher-banner",
+      "settings": {}
+    },
+    "local_seo": {
+      "type": "local-seo",
+      "settings": {}
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "about",
+    "products_overview",
+    "things_we_do",
+    "kosher_banner",
+    "local_seo",
+    "contact_cta"
+  ]
+}

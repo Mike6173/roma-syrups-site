@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "payment_page": {
+      "type": "payment-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "payment_page"
+  ]
+}

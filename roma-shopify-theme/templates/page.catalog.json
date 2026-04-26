@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "catalog_grid": {
+      "type": "catalog-grid",
+      "settings": {}
+    }
+  },
+  "order": [
+    "catalog_grid"
+  ]
+}

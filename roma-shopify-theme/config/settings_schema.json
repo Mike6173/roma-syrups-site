@@ -1,0 +1,58 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Roma Syrups Theme",
+    "theme_version": "1.0.0",
+    "theme_author": "Roma Syrups",
+    "theme_documentation_url": "",
+    "theme_support_url": ""
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "Will be scaled down to 32 x 32px"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_olive",
+        "label": "Primary (Navy)",
+        "default": "#0f2d6b"
+      },
+      {
+        "type": "color",
+        "id": "color_gold",
+        "label": "Accent (Orange)",
+        "default": "#ff6600"
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "label": "Twitter / X URL"
+      }
+    ]
+  }
+]
