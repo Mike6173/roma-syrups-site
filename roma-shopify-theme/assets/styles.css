@@ -6,12 +6,12 @@
 
 /* ── CSS VARIABLES ──────────────────────────────────────────── */
 :root {
-  --olive:          hsl(220, 60%, 20%);
-  --olive-dark:     hsl(220, 60%, 13%);
-  --olive-light:    hsl(220, 45%, 35%);
-  --gold:           hsl(25, 100%, 50%);
-  --gold-light:     hsl(25, 90%, 62%);
-  --gold-dark:      hsl(25, 100%, 40%);
+  --olive:          #0f2d6b;
+  --olive-dark:     #08193a;
+  --olive-light:    #2c4f96;
+  --gold:           #ff6600;
+  --gold-light:     #f58d47;
+  --gold-dark:      #cc5200;
   --charcoal:       hsl(220, 15%, 12%);
   --cream:          hsl(220, 30%, 96%);
   --warm-white:     hsl(220, 20%, 97%);
