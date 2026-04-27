@@ -38,9 +38,10 @@
       <!-- Desktop navigation -->
       <ul class="header-desktop-nav">
         <li><a href="/" {% if request.path == '/' %}class="active"{% endif %}>Home</a></li>
-        <li><a href="/collections/all" {% if request.path contains '/collections' %}class="active"{% endif %}>Catalog</a></li>
+        <li><a href="/pages/catalog" {% if request.path contains 'catalog' %}class="active"{% endif %}>Catalog</a></li>
         <li><a href="/pages/who-we-service" {% if request.path contains 'who-we-service' %}class="active"{% endif %}>Who We Service</a></li>
         <li><a href="/pages/services" {% if request.path contains '/pages/services' %}class="active"{% endif %}>Services</a></li>
+        <li><a href="/pages/payment" {% if request.path contains 'payment' %}class="active"{% endif %}>Payment</a></li>
         <li><a href="/pages/faq" {% if request.path contains 'faq' %}class="active"{% endif %}>FAQ</a></li>
         <li><a href="/pages/about" {% if request.path contains 'about' %}class="active"{% endif %}>About Us</a></li>
         <li><a href="/pages/contact" {% if request.path contains 'contact' %}class="active"{% endif %}>Contact Us</a></li>
@@ -84,9 +85,10 @@
     <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/collections/all">Catalog</a></li>
+        <li><a href="/pages/catalog">Catalog</a></li>
         <li><a href="/pages/who-we-service">Who We Service</a></li>
         <li><a href="/pages/services">Services</a></li>
+        <li><a href="/pages/payment">Payment</a></li>
         <li><a href="/pages/faq">FAQ</a></li>
         <li><a href="/pages/about">About Us</a></li>
         <li><a href="/pages/contact">Contact Us</a></li>
